@@ -42,7 +42,7 @@ The PDFs in `figures/` are the publication-authority files. Their SHA-256 hashes
 
 The current plotting package uses saved panel/table values only. It does not refit machine-learning models, recompute shortlist membership, reconstruct raw adsorption observations, or recalculate external-domain neighbors.
 
-## Regenerating current figures in WSL2
+## Regenerating current figures in Ubuntu
 
 The plotting workflow uses the Python environment already active in the shell. It does not create or activate a new Conda environment or venv.
 

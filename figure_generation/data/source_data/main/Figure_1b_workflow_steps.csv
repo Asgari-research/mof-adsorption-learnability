@@ -1,0 +1,13 @@
+step,title,description,full_note
+1,ARC-MOF labels,"4 adsorption targets
+geometry + RACs",Four adsorption targets with geometry and RAC descriptors.
+2,Few-shot design,"10–1000 labels
+seeds × split stress",Few-shot budgets from 10 to 1000 labels under repeated seeds and grouped split stress tests.
+3,Stable learners,"tree ensembles +
+gradient boosting",Stable tree ensembles and gradient boosting models retained for candidate nomination.
+4,Risk control,"90% conformal intervals
+three uncertainty tiers","90% conformal prediction intervals define trusted, uncertain, and rejected strata."
+5,Consensus,"models × seeds × splits
+target-balanced shortlist","Evidence combined across models, seeds, splits, and budgets into target-balanced consensus candidates."
+6,Domain overlay,"CoRE/MOSAEC overlap
+annotation, not validation",CoRE/MOSAEC geometry-domain overlap used as plausibility annotation rather than experimental validation.

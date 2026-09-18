@@ -1,0 +1,11 @@
+gate_outcome_or_rejection_reason,experiments
+not final-candidate model;coverage outside gate;RMSE too large,48
+low top-5 recall,57
+not final-candidate model;low/NaN Spearman;RMSE too large,71
+not final-candidate model;low top-5 recall,80
+coverage outside gate,93
+not final-candidate model;nan_rmse,244
+low/NaN Spearman,953
+not final-candidate model;RMSE too large,1736
+not final-candidate model,2156
+PASS,7250

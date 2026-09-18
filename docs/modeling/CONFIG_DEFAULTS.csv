@@ -1,0 +1,71 @@
+key,value_repr
+random_seed,42
+outer_seeds,"[42, 43, 44, 45, 46]"
+n_jobs,2
+save_mode,'balanced'
+ram_mode,'standard'
+comprehensive_level,'standard'
+data_root,None
+downcast_numeric_tables,True
+force_recompute,False
+quick_test_mode,False
+label_budgets,"[10, 20, 50, 100, 200, 500, 1000]"
+test_size,0.2
+calibration_size_within_train,0.2
+group_min_count,5
+enabled_splits,None
+feature_sets,"['geometry_only', 'geometry_plus_racs']"
+include_rdfs_if_available,False
+max_rac_features,None
+max_rdf_features,80
+models_to_run,"['ridge', 'rf', 'extra_trees', 'hgb', 'mlp', 'gpr', 'lightgbm', 'xgboost', 'tabpfn']"
+gpr_max_budget,200
+rf_n_estimators,250
+hgb_max_iter,100
+mlp_max_iter,400
+mlp_early_stopping_min_budget,50
+conformal_alpha,0.1
+local_conformal_k,50
+enable_local_conformal,True
+max_local_conformal_calibration_points,5000
+local_conformal_query_chunk_size,4000
+mondrian_min_cal_per_group,20
+top_fracs,"[0.01, 0.05, 0.1]"
+trusted_interval_width_quantile,0.5
+trusted_lower_bound_percentile,0.9
+n_bootstrap,300
+bootstrap_alpha,0.05
+figure_dpi,150
+savefig_dpi,300
+figure_format,['png']
+save_si_pdf,False
+enable_external_overlays,True
+external_match_max_candidates,1000
+geometry_nearest_neighbor_max_external_rows,50000
+geometry_match_distance_threshold,0.75
+save_public_release_safe_tables,True
+prefer_compact_prediction_files,True
+candidate_tiers_max_rows,250000
+candidate_tiers_per_file_rows,1500
+candidate_tiers_chunk_size,50000
+candidate_tiers_keep_top_per_group,50
+prediction_text_max_chars,160
+candidate_eligible_models,"['rf', 'extra_trees', 'hgb', 'lightgbm', 'xgboost']"
+stable_plot_models,"['rf', 'extra_trees', 'hgb', 'lightgbm', 'xgboost']"
+target_transform_models,"['ridge', 'mlp', 'gpr']"
+enable_log_target_transform,True
+enable_candidate_quality_gate,True
+min_candidate_spearman,0.0
+min_candidate_top5_recall,0.02
+min_candidate_split_coverage,0.7
+max_candidate_split_coverage,0.99
+max_candidate_rmse_std_multiplier,3.0
+prediction_upper_multiplier_observed_max,1.25
+prediction_lower_fraction_observed_max,-0.05
+external_geometry_columns,"['PLD', 'LCD', 'density']"
+consensus_min_models,2
+consensus_min_seeds,2
+consensus_min_splits,1
+postprocess_only,False
+force_postprocess,False
+rebuild_master,False

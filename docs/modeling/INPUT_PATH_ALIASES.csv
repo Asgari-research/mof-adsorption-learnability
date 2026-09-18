@@ -1,0 +1,50 @@
+canonical_name,candidate_relative_paths
+post_comb_vsa-CO2.csv,data_raw/arc_mof/adsorption/post_comb_vsa_co2.csv ; post_comb_vsa-CO2.csv ; post_comb_vsa_co2.csv
+post_comb_vsa-N2.csv,data_raw/arc_mof/adsorption/post_comb_vsa_n2.csv ; post_comb_vsa-N2.csv ; post_comb_vsa_n2.csv
+methane.csv,data_raw/arc_mof/adsorption/methane.csv ; methane.csv
+landfill-CO2.csv,data_raw/arc_mof/adsorption/landfill_co2.csv ; landfill-CO2.csv ; landfill_co2.csv
+landfill-CH4.csv,data_raw/arc_mof/adsorption/landfill_ch4.csv ; landfill-CH4.csv ; landfill_ch4.csv
+methane_purification-CO2.csv,data_raw/arc_mof/adsorption/methane_purification_co2.csv ; methane_purification-CO2.csv ; methane_purification_co2.csv
+methane_purification-CH4.csv,data_raw/arc_mof/adsorption/methane_purification_ch4.csv ; methane_purification-CH4.csv ; methane_purification_ch4.csv
+geometric_properties.csv,data_raw/arc_mof/descriptors/geometric_properties.csv ; geometric_properties.csv
+RACs.csv,data_raw/arc_mof/descriptors/racs.csv ; RACs.csv ; racs.csv
+RDFs.csv,data_raw/arc_mof/descriptors/rdfs.csv ; RDFs.csv ; rdfs.csv
+ARC-MOF_Dim.csv,data_raw/arc_mof/descriptors/arc_mof_dim.csv ; ARC-MOF_Dim.csv ; arc_mof_dim.csv
+overall_process.csv,data_raw/arc_mof/process/overall_process.csv ; overall_process.csv
+geo-clusters.csv,data_raw/arc_mof/clusters/geo_clusters.csv ; geo-clusters.csv ; geo_clusters.csv
+mc-clusters.csv,data_raw/arc_mof/clusters/mc_clusters.csv ; mc-clusters.csv ; mc_clusters.csv
+func-clusters.csv,data_raw/arc_mof/clusters/func_clusters.csv ; func-clusters.csv ; func_clusters.csv
+flig-clusters.csv,data_raw/arc_mof/clusters/flig_clusters.csv ; flig-clusters.csv ; flig_clusters.csv
+mc-diverse-set.csv,data_raw/arc_mof/diversity_sets/mc_diverse_set.csv ; mc-diverse-set.csv ; mc_diverse_set.csv
+func-diverse-set.csv,data_raw/arc_mof/diversity_sets/func_diverse_set.csv ; func-diverse-set.csv ; func_diverse_set.csv
+all_topology_lists.csv,data_raw/arc_mof/topology/all_topology_lists.csv ; all_topology_lists.csv
+ARCMOF_20241004.tar.gz,data_raw/arc_mof/structures/ARCMOF_20241004.tar.gz ; ARCMOF_20241004.tar.gz
+ASR_data_SI_20250204.csv,data_raw/core_mof_2024/metadata/asr_data_si_20250204.csv ; ASR_data_SI_20250204.csv ; asr_data_si_20250204.csv
+FSR_data_SI_20250204.csv,data_raw/core_mof_2024/metadata/fsr_data_si_20250204.csv ; FSR_data_SI_20250204.csv ; fsr_data_si_20250204.csv
+ION_data_SI_20250204.csv,data_raw/core_mof_2024/metadata/ion_data_si_20250204.csv ; ION_data_SI_20250204.csv ; ion_data_si_20250204.csv
+12089-recommended-screening-list.csv,data_raw/core_mof_2024/metadata/12089_recommended_screening_list.csv ; 12089-recommended-screening-list.csv ; 12089_recommended_screening_list.csv
+ASR_FSR_check.csv,data_raw/core_mof_2024/duplicate_checks/asr_fsr_check.csv ; ASR_FSR_check.csv ; asr_fsr_check.csv
+NCR_ASR_SI.xlsx,data_raw/core_mof_2024/diagnostics/ncr_asr_si.xlsx ; NCR_ASR_SI.xlsx ; ncr_asr_si.xlsx
+NCR_FSR_SI.xlsx,data_raw/core_mof_2024/diagnostics/ncr_fsr_si.xlsx ; NCR_FSR_SI.xlsx ; ncr_fsr_si.xlsx
+NCR_ION_SI.xlsx,data_raw/core_mof_2024/diagnostics/ncr_ion_si.xlsx ; NCR_ION_SI.xlsx ; ncr_ion_si.xlsx
+unmodified_check_for_NCR_SI.xlsx,data_raw/core_mof_2024/diagnostics/unmodified_check_for_ncr_si.xlsx ; unmodified_check_for_NCR_SI.xlsx ; unmodified_check_for_ncr_si.xlsx
+water_data.xlsx,data_raw/core_mof_2024/water_gemc/extracted/water/water_data.xlsx ; water_data.xlsx
+widom.xlsx,data_raw/core_mof_2024/water_gemc/extracted/water/widom.xlsx ; widom.xlsx
+structure_information.csv,data_raw/core_mof_2024/tsa/extracted/tsa/TSA/structure_information.csv ; structure_information.csv
+data_298_423_1bar_CO2_N2_891.csv,data_raw/core_mof_2024/tsa/extracted/tsa/TSA/data_298_423_1bar_CO2_N2_891.csv ; data_298_423_1bar_CO2_N2_891.csv
+mofid-v2.zip,data_raw/core_mof_2024/mofid/archives/mofid-v2.zip ; mofid-v2.zip
+water.zip,data_raw/core_mof_2024/water_gemc/archives/water.zip ; water.zip
+TSA.zip,data_raw/core_mof_2024/tsa/archives/TSA.zip ; TSA.zip
+mosaec-db.csv,data_raw/mosaec_db/database/mosaec_db.csv ; data_raw/mosaec_db/mosaec-db.csv ; data_raw/mosaec_db/mosaec_db.csv ; mosaec-db.csv ; mosaec_db.csv
+mosaec-db.xlsx,data_raw/mosaec_db/database/mosaec_db.xlsx ; data_raw/mosaec_db/mosaec-db.xlsx ; data_raw/mosaec_db/mosaec_db.xlsx ; mosaec-db.xlsx ; mosaec_db.xlsx
+GEOM_mosaec-db.csv,data_raw/mosaec_db/descriptors/extracted/descriptors/descriptors/GEOM_mosaec-db.csv ; GEOM_mosaec-db.csv
+RAC_mosaec-db.csv,data_raw/mosaec_db/descriptors/extracted/descriptors/descriptors/RAC_mosaec-db.csv ; RAC_mosaec-db.csv
+APRDF_mosaec-db.csv,data_raw/mosaec_db/descriptors/extracted/descriptors/descriptors/APRDF_mosaec-db.csv ; APRDF_mosaec-db.csv
+PHOM_mosaec-db.csv,data_raw/mosaec_db/descriptors/extracted/descriptors/descriptors/PHOM_mosaec-db.csv ; PHOM_mosaec-db.csv
+PDD_duplicate_thresh0.15.csv,data_raw/mosaec_db/misc_data/extracted/misc_data/misc_data/PDD_duplicate_thresh0.15.csv ; PDD_duplicate_thresh0.15.csv
+uniq-neutral-porous-2.4pld.txt,data_raw/mosaec_db/subsets/extracted/subsets/subsets/uniq-neutral-porous-2.4pld.txt ; uniq-neutral-porous-2.4pld.txt
+uniq-neutral-porous-0.10vf.txt,data_raw/mosaec_db/subsets/extracted/subsets/subsets/uniq-neutral-porous-0.10vf.txt ; uniq-neutral-porous-0.10vf.txt
+descriptors.tar.gz,data_raw/mosaec_db/descriptors/archives/descriptors.tar.gz ; descriptors.tar.gz
+misc_data.tar.gz,data_raw/mosaec_db/misc_data/archives/misc_data.tar.gz ; misc_data.tar.gz
+subsets.tar.gz,data_raw/mosaec_db/subsets/archives/subsets.tar.gz ; subsets.tar.gz
+scripts.tar.gz,data_raw/mosaec_db/scripts/archives/scripts.tar.gz ; scripts.tar.gz

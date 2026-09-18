@@ -1,0 +1,14 @@
+name,definition_count,line_numbers,active_definition_line,active_end_line,kind
+collect_candidate_tiers,2,2798;4676,4676,4795,FunctionDef
+build_consensus_candidate_table,2,2908;4798,4798,4886,FunctionDef
+build_external_realism_table,2,4032;4909,4909,5003,FunctionDef
+chemical_failure_anatomy,2,3009;5006,5006,5072,FunctionDef
+save_manuscript_si_tables,3,3439;5582;6449,6449,6454,FunctionDef
+plot_external_si_figures,2,4303;6978,6978,7026,FunctionDef
+plot_figure_1_framework,7,3114;6457;8178;8956;9883;11052;11494,11494,11496,FunctionDef
+plot_figure_2_performance,8,3168;5640;6496;8183;8961;9888;11057;11499,11499,11500,FunctionDef
+plot_figure_3_calibration,8,3205;5712;6608;8187;8965;9892;11061;11503,11503,11504,FunctionDef
+plot_figure_4_failure_anatomy,9,3279;5075;5771;6727;8191;8969;9896;11065;11507,11507,11508,FunctionDef
+plot_figure_5_external_realism,9,4194;5167;5844;6861;8196;8974;9901;11070;11511,11511,11512,FunctionDef
+plot_si_figures,8,3352;5917;7029;8201;8979;9906;11075;11515,11515,11516,FunctionDef
+write_run_report,8,3501;5973;7080;8206;8984;9911;11080;11519,11519,11520,FunctionDef

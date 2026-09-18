@@ -1,0 +1,22 @@
+line,options,default,action,choices,help
+590,--data-root,None,'','',"Root of the shared project data archive, e.g. E:\projects\our_group\ai\project_data. Overrides FEWSHOT_DATA_ROOT."
+592,--n-jobs,None,'','',"Number of CPU workers, or 'auto'. Default is CONFIG n_jobs=2 / FEWSHOT_N_JOBS."
+594,--save-mode,None,'',"['tiny', 'minimal', 'efficient', 'compact', 'lean', 'balanced', 'full']","Disk mode: tiny, minimal, efficient, lean, balanced, or full. 'efficient' is recommended for final disk-efficient runs; 'compact' is an alias for lean."
+596,--ram-mode,None,'','list(RAM_MODE_PROFILES.keys())',"RAM profile: ultra_light, light, standard, or normal."
+598,--comprehensive-level,None,'','list(COMPREHENSIVE_LEVEL_PROFILES.keys())',"Scientific breadth: smoke, quick, standard, or full."
+600,--quick-test,'','store_true','',Backward-compatible alias for --comprehensive-level quick.
+602,--smoke-test,'','store_true','',Backward-compatible alias for --comprehensive-level smoke.
+604,--force-recompute,'','store_true','',Ignore .done markers and recompute stages.
+606,--postprocess-only,'','store_true','',"Reuse existing experiment metrics/predictions and rerun only aggregation, QC, candidate filtering, consensus tables, overlays, figures, and report."
+608,--force-postprocess,'','store_true','',Delete downstream .done markers so post-processing stages are regenerated without refitting models.
+610,--rebuild-master,'','store_true','',"Rebuild the master table, useful after fixing RDF identifier merging. Does not delete completed experiment outputs by itself."
+612,--candidate-eligible-models,None,'','',"Comma-separated models allowed to nominate final candidates, e.g. rf,extra_trees,lightgbm,xgboost."
+614,--disable-candidate-quality-gate,'','store_true','',Do not filter candidate tiers by experiment quality/sanity gates. Not recommended for final shortlist generation.
+616,--include-rdfs,'','store_true','',Include RDFs.csv as an SI descriptor ablation if present. This can be large/slow.
+618,--disable-external-overlays,'','store_true','',Skip CoRE/MOSAEC external realism overlays even if files are present.
+620,--models,None,'','',"Comma-separated model list, e.g. ridge,extra_trees,hgb."
+622,--budgets,None,'','',"Comma-separated label budgets, e.g. 10,50,100,500."
+624,--seeds,None,'','',"Comma-separated random seeds, e.g. 42,43,44."
+626,--targets,None,'','',"Comma-separated target names. Example: CO2_0p015bar_298K_mmolg,CO2_0p150bar_298K_mmolg"
+628,--splits,None,'','',"Comma-separated split names. Example: random,geometry_grouped,topology_grouped"
+630,--feature-sets,None,'','',"Comma-separated feature sets. Example: geometry_only,geometry_plus_racs"

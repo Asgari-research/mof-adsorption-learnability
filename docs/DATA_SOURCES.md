@@ -84,6 +84,10 @@ ARC-MOF is an upstream third-party research dataset. This repository does not gr
 
 The MIT license in this repository applies to repository-authored software/documentation as described by that license; it should not be interpreted as relicensing third-party ARC-MOF inputs.
 
+## Publication-level derivative tables
+
+Complete machine-readable tables associated with the manuscript are deposited under `publication_tables/`. The `publication_tables/main/` directory contains manuscript-level target/performance/candidate tables, and `publication_tables/si/` contains the full CSV counterparts of Supplementary Tables S1-S8. These files are derivative benchmark outputs and are not raw ARC-MOF inputs. Their file sizes, row/column counts and SHA-256 hashes are recorded in `publication_tables/MANIFEST_SHA256.csv`.
+
 ## Optional historical external overlays
 
 The preserved pipeline also contains optional CoRE-MOF/MOSAEC overlay stages. Their exact historical input versions and external-column mapping are not fully certified by the currently released provenance. They are therefore not substituted or reconstructed in this final release step. See [`modeling/SCIENTIFIC_AND_PROVENANCE_NOTES.md`](modeling/SCIENTIFIC_AND_PROVENANCE_NOTES.md) and [`figures/S3_PROVENANCE_STATUS.md`](figures/S3_PROVENANCE_STATUS.md).

@@ -27,7 +27,11 @@ Historical modelling pipeline
           |  uncertainty, candidate collection, saved tables
           v
 Historical/saved numerical outputs
-  only a publication-facing subset is included here
+  publication-facing derivative tables are deposited in publication_tables/
+          |
+          +--> Complete manuscript/SI publication tables
+          |    publication_tables/main/
+          |    publication_tables/si/
           |
           v
 Saved figure source tables
@@ -59,7 +63,8 @@ A fresh clone can:
 
 - verify the exact historical source hashes;
 - inspect configuration, CLI, path and override maps without importing the historical module;
-- inspect the saved publication-level source tables;
+- inspect the complete machine-readable publication tables under `publication_tables/`;
+- inspect the saved panel-level source tables used by the plotting workflow;
 - regenerate the current manuscript figures if compatible plotting dependencies and Arial are available;
 - verify the finalized figure hashes;
 - run the read-only repository integrity check.
@@ -112,7 +117,8 @@ When two files appear to represent the same concept, use this hierarchy:
 
 - `figures/` — authority for finalized manuscript figure PDFs;
 - `docs/figures/FINAL_FIGURE_MANIFEST.csv` — authority for their hashes;
-- `figure_generation/` — current plotting implementation/source tables;
+- `publication_tables/` — complete machine-readable manuscript and SI publication tables;
+- `figure_generation/` — current plotting implementation/panel-level source tables;
 - `modeling_pipeline/src/` — preserved historical modelling implementation;
 - `modeling_pipeline/legacy_publication_renderer/` — historical renderer only;
 - `docs/modeling/` — static maps and limitations, not executable scientific logic.

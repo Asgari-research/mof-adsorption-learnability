@@ -1,0 +1,28 @@
+module,classification
+__future__,standard library
+argparse,standard library
+dataclasses,standard library
+datetime,standard library
+gc,standard library
+joblib,core third-party dependency
+json,standard library
+lightgbm,optional model dependency
+logging,standard library
+math,standard library
+matplotlib,core third-party dependency
+numpy,core third-party dependency
+os,standard library
+pandas,core third-party dependency
+pathlib,standard library
+pickle,standard library
+re,standard library
+scipy,core third-party dependency
+shutil,standard library
+sklearn,core third-party dependency
+sys,standard library
+tabpfn,optional model dependency
+time,standard library
+traceback,standard library
+typing,standard library
+warnings,standard library
+xgboost,optional model dependency

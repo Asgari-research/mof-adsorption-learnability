@@ -1,0 +1,28 @@
+{
+  "pipeline": {
+    "path": "modeling_pipeline/src/fewshot_mof_risk_controlled_external_pipeline_v4_8_supplied.py",
+    "sha256": "1553d2b27118b400b53b17d436e76b33f10629445b62c311d70e2f9e907b3c3d",
+    "ast_sha256": "afdb43b0814709cb715cdc7861ee469b8ea883d1d9f2f9314c2039c1f616fc07",
+    "lines": 11532,
+    "top_level_definitions": 319,
+    "unique_top_level_definition_names": 262,
+    "redefined_top_level_names": 13,
+    "main_definition_lines": [
+      7138
+    ],
+    "main_guard_lines": [
+      11523
+    ],
+    "literal_named_provider_marker_matches": 0,
+    "imports_module_level_side_effects": true
+  },
+  "legacy_publication_renderer": {
+    "path": "modeling_pipeline/legacy_publication_renderer/regenerate_publication_figures_and_tables_v4_9.py",
+    "sha256": "c5f1fdfe8f7d758834124996bffeead5e46cbf4eccb33650cdb2abfc079a59ae",
+    "ast_sha256": "8b0d071128f11bb76e94224a0f61840644424822c790bfac8bfde648fa39636d",
+    "lines": 448,
+    "top_level_definitions": 19,
+    "redefined_top_level_names": 0,
+    "literal_named_provider_marker_matches": 0
+  }
+}

@@ -50,6 +50,18 @@ For current figure regeneration, read:
 
 `figure_generation/README.md`
 
+## Primary data source and citation
+
+The benchmark is derived from the **ARC-MOF** database. For strict historical provenance, use the ARC-MOF **v6** Zenodo snapshot updated on 2024-10-04:
+
+- exact v6 record: [10.5281/zenodo.13891643](https://doi.org/10.5281/zenodo.13891643)
+- persistent ARC-MOF concept DOI (all versions): [10.5281/zenodo.6908727](https://doi.org/10.5281/zenodo.6908727)
+- peer-reviewed database paper: Burner *et al.*, *Chemistry of Materials* **35** (2023) 900-916, [10.1021/acs.chemmater.2c02485](https://doi.org/10.1021/acs.chemmater.2c02485)
+
+The historical source explicitly recognizes the `ARCMOF_20241004.tar.gz` archive name and the tabular files available in that v6 record. Raw ARC-MOF source files are **not** redistributed by this repository. Download third-party inputs from the upstream record and retain their original provenance and terms.
+
+See [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) for the exact benchmark input files, target mapping, upstream checksums, and reproduction notes.
+
 ## Modelling pipeline
 
 `modeling_pipeline/src/fewshot_mof_risk_controlled_external_pipeline_v4_8_supplied.py` is preserved byte-for-byte from the supplied historical analysis package. Repository cleanup does not refit models or modify its scientific logic. Its source SHA-256 and static architecture maps are recorded under `docs/modeling/`.

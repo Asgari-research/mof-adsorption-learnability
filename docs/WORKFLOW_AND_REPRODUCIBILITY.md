@@ -13,7 +13,8 @@ The repository intentionally preserves that distinction.
 
 ```text
 External/raw MOF data
-  ARC-MOF adsorption + geometry
+  ARC-MOF v6 adsorption + geometry
+  exact record: 10.5281/zenodo.13891643
   RAC / grouping / optional process data
   optional external CoRE/MOSAEC resources
           |
@@ -47,6 +48,10 @@ Publication-authority PDFs
   figures/main/
   figures/si/
 ```
+
+## Upstream ARC-MOF source
+
+The historical benchmark is tied to ARC-MOF **v6** (2024-10-04), exact record DOI `10.5281/zenodo.13891643`. The persistent ARC-MOF concept DOI is `10.5281/zenodo.6908727`, and the peer-reviewed database paper DOI is `10.1021/acs.chemmater.2c02485`. Raw ARC-MOF files are not redistributed here. See [`DATA_SOURCES.md`](DATA_SOURCES.md) for exact input filenames, target mapping, and upstream checksums.
 
 ## What can be checked from a fresh clone
 

@@ -37,6 +37,7 @@ required = [
     ROOT / "LICENSE",
     ROOT / "AUTHORS.md",
     ROOT / "docs" / "WORKFLOW_AND_REPRODUCIBILITY.md",
+    ROOT / "docs" / "DATA_SOURCES.md",
     ROOT / "docs" / "modeling" / "SOURCE_MANIFEST.csv",
     ROOT / "docs" / "modeling" / "STATIC_ARCHITECTURE.md",
     ROOT / "docs" / "modeling" / "EXECUTION_SEMANTICS.md",
@@ -86,6 +87,31 @@ if src_manifest.exists():
                 continue
             if sha256(path) != row["sha256"]:
                 errors.append(f"figure source hash mismatch: {row['relative_path']}")
+
+# Current figure-generation code hashes.
+code_manifest = ROOT / "docs" / "figures" / "CURRENT_CODE_MANIFEST.csv"
+if code_manifest.exists():
+    with code_manifest.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            path = ROOT / row["relative_path"]
+            if not path.exists():
+                errors.append(f"figure-code manifest path missing: {row['relative_path']}")
+                continue
+            if sha256(path) != row["sha256"]:
+                errors.append(f"figure-code hash mismatch: {row['relative_path']}")
+
+# ARC-MOF provenance markers required for a reproducible third-party-data trail.
+data_sources = ROOT / "docs" / "DATA_SOURCES.md"
+if data_sources.exists():
+    txt = data_sources.read_text(encoding="utf-8", errors="replace")
+    for required_text in (
+        "10.5281/zenodo.13891643",
+        "10.5281/zenodo.6908727",
+        "10.1021/acs.chemmater.2c02485",
+        "ARCMOF_20241004.tar.gz",
+    ):
+        if required_text not in txt:
+            errors.append(f"ARC-MOF provenance marker missing from docs/DATA_SOURCES.md: {required_text}")
 
 # Parse Python without importing it.
 py_files = []

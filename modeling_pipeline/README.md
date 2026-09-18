@@ -34,6 +34,14 @@ The historical source is restart-oriented but its cache identities are not finge
 
 The module also has import-time side effects: it configures runtime state and creates output directories before the final `if __name__ == "__main__"` guard. Do not import it merely to inspect configuration. Use the static maps under `../docs/modeling/` instead.
 
+## Obtaining the ARC-MOF inputs
+
+For strict historical provenance, download ARC-MOF **v6** from Zenodo record DOI `10.5281/zenodo.13891643` (updated 2024-10-04). The persistent ARC-MOF concept DOI is `10.5281/zenodo.6908727`. Cite the associated ARC-MOF paper, DOI `10.1021/acs.chemmater.2c02485`.
+
+The principal benchmark requires `geometric_properties.csv`, `post_comb_vsa-CO2.csv`, `methane.csv`, `RACs.csv`, the four cluster files, and `all_topology_lists.csv` for the full grouped-split set. `overall_process.csv` is contextual/optional for the central four-target benchmark. See [`../docs/DATA_SOURCES.md`](../docs/DATA_SOURCES.md) for the exact file roles and upstream checksums.
+
+Raw ARC-MOF files are not redistributed in this repository. Do not silently substitute a different ARC-MOF version when claiming strict historical reproduction.
+
 ## Inputs and paths
 
 At runtime the script requires at least:

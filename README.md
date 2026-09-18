@@ -125,7 +125,6 @@ Known scientific/provenance limits are documented in:
 - `docs/modeling/REPRODUCTION_STATUS.md`
 - `docs/figures/SCIENTIFIC_NOTES.md`
 
-Figure S3 remains in the current SI asset set, but its historical external-geometry mapping is not independently certified from the available provenance. See `docs/figures/S3_PROVENANCE_STATUS.md`.
 
 ## License
 

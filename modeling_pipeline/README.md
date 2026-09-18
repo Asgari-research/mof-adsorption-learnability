@@ -1,10 +1,10 @@
 # Historical modelling pipeline
 
-This directory preserves the computational modelling source supplied for the MOF adsorption learnability study. It is separated from the current publication-figure workflow so that numerical provenance and figure regeneration are not conflated.
+This directory preserves the computational modelling source supplied for the MOF adsorption learnability study. It is separated from the current publication-figure workflow so that historical numerical provenance and current figure regeneration are not conflated.
 
 ## Release policy
 
-The main modelling source is included **byte-for-byte as supplied**. Phase 2 release preparation did not refit models, recompute candidates, modify thresholds, alter random seeds, repair the external geometry mapping, or rewrite the historical override chain.
+The main modelling source is included **byte-for-byte as supplied**. Release preparation did not refit models, recompute candidates, modify thresholds, alter random seeds, repair the external geometry mapping, or rewrite the historical override chain.
 
 Primary historical source:
 
@@ -27,6 +27,10 @@ The saved results audited for the manuscript contain geometry-only and geometry+
 ## Important execution semantics
 
 The tested budget is a **model-fitting budget**, not the full number of labels touched by the retrospective workflow. Calibration and test reservoirs remain outside that fitting subset, and the fitting subset uses target-stratified sampling across the tested budget grid.
+
+The historical source is restart-oriented but its cache identities are not fingerprints of every configuration setting. It also contains budget-dependent HGB/MLP settings and low-memory profiles that can alter descriptor/uncertainty behavior. Before an intentional rerun, read:
+
+`../docs/modeling/EXECUTION_SEMANTICS.md`
 
 The module also has import-time side effects: it configures runtime state and creates output directories before the final `if __name__ == "__main__"` guard. Do not import it merely to inspect configuration. Use the static maps under `../docs/modeling/` instead.
 
@@ -52,6 +56,8 @@ python src/fewshot_mof_risk_controlled_external_pipeline_v4_8_supplied.py \
 
 A full run can be expensive. **No full run is required to use the finalized manuscript figures in this repository.**
 
+For any intentional rerun, use a fresh output directory or deliberately clear/force the relevant historical cache state; do not assume an existing `.done` marker is compatible with changed configuration.
+
 ## Dependencies
 
 `requirements-historical.txt` is the unpinned dependency list supplied with the historical code. It is not an environment lock and should not be interpreted as the exact environment used for the saved results. No exact environment export was available in the supplied audit bundle.
@@ -67,8 +73,8 @@ See `../docs/modeling/` for:
 - CLI arguments;
 - input-path aliases;
 - import/dependency classification;
-- the complete top-level definition map;
-- the active override map for repeated function names;
+- complete top-level definition and override maps;
+- execution/cache semantics;
 - known scientific/provenance limitations.
 
 The external-domain `Di`/`Df` mapping issue documented in the manuscript audit is intentionally **not repaired here**. Historical external-overlap outputs must not be presented as corrected by this release step.

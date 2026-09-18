@@ -1,0 +1,4 @@
+feature_set,n_features,n_geometry_features,n_rac_features,n_rdf_features,duplicate_of,usable_for_modelling
+geometry_only,23,23,0,0,,True
+geometry_plus_racs,171,23,148,0,,True
+geometry_plus_racs_rdfs,171,23,148,0,geometry_plus_racs,False

@@ -1,0 +1,13 @@
+target,threshold_fraction_of_final_recall,budget_needed
+CO2_0p015bar_298K_mmolg,0.5,50
+CO2_0p015bar_298K_mmolg,0.75,200
+CO2_0p015bar_298K_mmolg,0.9,500
+CO2_0p150bar_298K_mmolg,0.5,50
+CO2_0p150bar_298K_mmolg,0.75,200
+CO2_0p150bar_298K_mmolg,0.9,500
+CH4_5p8bar_298K_mmolg,0.5,50
+CH4_5p8bar_298K_mmolg,0.75,200
+CH4_5p8bar_298K_mmolg,0.9,500
+CH4_65bar_298K_mmolg,0.5,50
+CH4_65bar_298K_mmolg,0.75,100
+CH4_65bar_298K_mmolg,0.9,500

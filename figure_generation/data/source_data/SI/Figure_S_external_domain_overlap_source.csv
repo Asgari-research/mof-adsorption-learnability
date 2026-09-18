@@ -1,0 +1,5 @@
+target,target_label_plain,n_candidates,core_exact_fraction,mosaec_exact_fraction,core_geometry_overlap_fraction,mosaec_geometry_overlap_fraction,mean_external_annotation_score
+CO2_0p015bar_298K_mmolg,CO2 0.015 bar,250,0.0,0.0,0.636,0.496,1.132
+CO2_0p150bar_298K_mmolg,CO2 0.150 bar,250,0.0,0.0,0.8,0.76,1.56
+CH4_5p8bar_298K_mmolg,CH4 5.8 bar,250,0.0,0.0,0.952,0.608,1.56
+CH4_65bar_298K_mmolg,CH4 65 bar,250,0.0,0.0,0.0,0.008,0.008

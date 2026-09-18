@@ -1,0 +1,9 @@
+model,experiment_passes_quality_gate
+gpr,0.0
+mlp,0.0
+ridge,0.0
+hgb,0.7029761904761904
+lightgbm,0.7035714285714286
+xgboost,0.9654761904761905
+extra_trees,0.9714285714285714
+rf,0.9720238095238095

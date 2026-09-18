@@ -1,0 +1,1 @@
+Figure S1 source data in this package are exact 60-bin histogram counts recovered from the supplied v4.8 SVG vector figure. They reproduce the displayed histogram exactly and sum to 279,010 MOFs per target. Individual MOF-level uptake rows were not present in the uploaded publication ZIP, so they are not reconstructed or invented.

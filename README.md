@@ -20,6 +20,12 @@ figure_generation/
   run_all.py
   verify_outputs.py
 
+publication_tables/
+  main/                         Complete manuscript-level CSV tables
+  si/                           Complete machine-readable SI Tables S1-S8
+  README.md                     Table map and interpretation notes
+  MANIFEST_SHA256.csv           File hashes, sizes and row/column counts
+
 figures/
   main/                         Final main-text PDFs (Figures 1-5)
   si/                           Final SI PDFs (Figures S1-S3)
@@ -49,6 +55,12 @@ For the historical modelling implementation, read:
 For current figure regeneration, read:
 
 `figure_generation/README.md`
+
+## Publication tables
+
+The complete machine-readable publication tables are deposited under `publication_tables/`. The `main/` subdirectory contains manuscript-level summary/candidate tables, while `si/` contains the complete CSV counterparts of Supplementary Tables S1-S8. Large tables such as S1 and S3 are intentionally summarized in the typeset SI rather than printed row-by-row. `publication_tables/MANIFEST_SHA256.csv` provides row counts, dimensions and SHA-256 hashes for integrity checks.
+
+These publication-level tables are derived outputs and do not replace the upstream ARC-MOF source data.
 
 ## Primary data source and citation
 

@@ -1,0 +1,5 @@
+target,delta_recall_racs_minus_geometry
+CH4_65bar_298K_mmolg,0.03927685871602615
+CO2_0p015bar_298K_mmolg,0.09920395190383635
+CO2_0p150bar_298K_mmolg,0.12820480601894474
+CH4_5p8bar_298K_mmolg,0.17535263679780033

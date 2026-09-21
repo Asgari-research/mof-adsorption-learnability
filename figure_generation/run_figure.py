@@ -1,21 +1,22 @@
 #!/usr/bin/env python3
+"""Regenerate one publication figure from saved source tables."""
 from __future__ import annotations
 import argparse
-from pathlib import Path
+import subprocess
 import sys
-ROOT = Path(__file__).resolve().parent
-sys.path.insert(0, str(ROOT / "code"))
-from figure_style import configure_matplotlib
-from fewshot_figures import FIGURE_FUNCTIONS
+from pathlib import Path
 
-p = argparse.ArgumentParser()
-p.add_argument("figure", choices=list(FIGURE_FUNCTIONS))
-p.add_argument("--source-root", type=Path, default=ROOT / "data")
-p.add_argument("--output-root", type=Path, default=ROOT / "outputs")
-p.add_argument("--dpi", type=int, default=200)
-p.add_argument("--allow-font-fallback-for-preview", action="store_true")
-a = p.parse_args()
-configure_matplotlib(strict_font=not a.allow_font_fallback_for_preview)
-out = a.output_root / ("held_s3" if a.figure == "S3" else "final")
-FIGURE_FUNCTIONS[a.figure](a.source_root, out, a.dpi)
-print(out)
+ROOT = Path(__file__).resolve().parent
+RENDERER = ROOT / "code" / "final_publication_figures.py"
+
+parser = argparse.ArgumentParser()
+parser.add_argument("figure", choices=["2", "3", "4", "5", "S1", "S2", "S3"])
+parser.add_argument("--dpi", type=int, default=200)
+parser.add_argument("--formats", nargs="+", default=["pdf", "png"], choices=["pdf", "png", "svg"])
+parser.add_argument("--allow-font-fallback-for-preview", action="store_true")
+args = parser.parse_args()
+
+cmd = [sys.executable, "-B", str(RENDERER), "--figures", args.figure, "--main-grid", "mixed", "--dpi", str(args.dpi), "--formats", *args.formats]
+if args.allow_font_fallback_for_preview:
+    cmd.append("--allow-font-fallback-for-preview")
+subprocess.run(cmd, cwd=ROOT, check=True)

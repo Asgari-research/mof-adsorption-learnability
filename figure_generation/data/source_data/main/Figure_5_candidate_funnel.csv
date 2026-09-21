@@ -1,0 +1,17 @@
+target,target_label_plain,stage,count
+CO2_0p015bar_298K_mmolg,CO2 0.015 bar,Labelled MOFs,279010
+CO2_0p015bar_298K_mmolg,CO2 0.015 bar,Quality-gated rows,30000
+CO2_0p015bar_298K_mmolg,CO2 0.015 bar,Consensus pass,3211
+CO2_0p015bar_298K_mmolg,CO2 0.015 bar,Top-25,25
+CO2_0p150bar_298K_mmolg,CO2 0.150 bar,Labelled MOFs,279010
+CO2_0p150bar_298K_mmolg,CO2 0.150 bar,Quality-gated rows,30000
+CO2_0p150bar_298K_mmolg,CO2 0.150 bar,Consensus pass,3192
+CO2_0p150bar_298K_mmolg,CO2 0.150 bar,Top-25,25
+CH4_5p8bar_298K_mmolg,CH4 5.8 bar,Labelled MOFs,279010
+CH4_5p8bar_298K_mmolg,CH4 5.8 bar,Quality-gated rows,30000
+CH4_5p8bar_298K_mmolg,CH4 5.8 bar,Consensus pass,2528
+CH4_5p8bar_298K_mmolg,CH4 5.8 bar,Top-25,25
+CH4_65bar_298K_mmolg,CH4 65 bar,Labelled MOFs,279010
+CH4_65bar_298K_mmolg,CH4 65 bar,Quality-gated rows,30000
+CH4_65bar_298K_mmolg,CH4 65 bar,Consensus pass,1617
+CH4_65bar_298K_mmolg,CH4 65 bar,Top-25,25

@@ -1,0 +1,25 @@
+target,split,recall_mean,split_label,target_label_plain
+CH4_5p8bar_298K_mmolg,functional_grouped,0.5154515221152487,Functional,CH4 5.8 bar
+CH4_5p8bar_298K_mmolg,geometry_grouped,0.5280978705114742,Geometry,CH4 5.8 bar
+CH4_5p8bar_298K_mmolg,ligand_grouped,0.5252006262471532,Ligand,CH4 5.8 bar
+CH4_5p8bar_298K_mmolg,metal_grouped,0.4969879206722577,Metal,CH4 5.8 bar
+CH4_5p8bar_298K_mmolg,random,0.5258330347545682,Random,CH4 5.8 bar
+CH4_5p8bar_298K_mmolg,topology_grouped,0.3387332534149672,Topology,CH4 5.8 bar
+CH4_65bar_298K_mmolg,functional_grouped,0.8402407797917515,Functional,CH4 65 bar
+CH4_65bar_298K_mmolg,geometry_grouped,0.8340622595313436,Geometry,CH4 65 bar
+CH4_65bar_298K_mmolg,ligand_grouped,0.84311201353703,Ligand,CH4 65 bar
+CH4_65bar_298K_mmolg,metal_grouped,0.8108520925083003,Metal,CH4 65 bar
+CH4_65bar_298K_mmolg,random,0.8392547474023647,Random,CH4 65 bar
+CH4_65bar_298K_mmolg,topology_grouped,0.7741917001953338,Topology,CH4 65 bar
+CO2_0p015bar_298K_mmolg,functional_grouped,0.5469370137307668,Functional,CO2 0.015 bar
+CO2_0p015bar_298K_mmolg,geometry_grouped,0.5212898003583486,Geometry,CO2 0.015 bar
+CO2_0p015bar_298K_mmolg,ligand_grouped,0.5299197414822754,Ligand,CO2 0.015 bar
+CO2_0p015bar_298K_mmolg,metal_grouped,0.49313115903533034,Metal,CO2 0.015 bar
+CO2_0p015bar_298K_mmolg,random,0.5260050161232533,Random,CO2 0.015 bar
+CO2_0p015bar_298K_mmolg,topology_grouped,0.4197594824684491,Topology,CO2 0.015 bar
+CO2_0p150bar_298K_mmolg,functional_grouped,0.5715016194865749,Functional,CO2 0.150 bar
+CO2_0p150bar_298K_mmolg,geometry_grouped,0.546570674761159,Geometry,CO2 0.150 bar
+CO2_0p150bar_298K_mmolg,ligand_grouped,0.529485289229749,Ligand,CO2 0.150 bar
+CO2_0p150bar_298K_mmolg,metal_grouped,0.5082199831492735,Metal,CO2 0.150 bar
+CO2_0p150bar_298K_mmolg,random,0.5449516302400573,Random,CO2 0.150 bar
+CO2_0p150bar_298K_mmolg,topology_grouped,0.410036007926878,Topology,CO2 0.150 bar

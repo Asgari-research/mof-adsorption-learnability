@@ -1,0 +1,5 @@
+target,retained_fraction,precision_true_top5,n_retained,score_column
+CH4_5p8bar_298K_mmolg,0.1,0.8823333333333333,3000,split_lower
+CH4_65bar_298K_mmolg,0.1,0.9993333333333332,3000,split_lower
+CO2_0p015bar_298K_mmolg,0.1,0.3993333333333333,3000,split_lower
+CO2_0p150bar_298K_mmolg,0.1,0.501,3000,split_lower

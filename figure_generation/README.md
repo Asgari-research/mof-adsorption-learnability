@@ -1,32 +1,42 @@
 # Figure generation
 
-This directory contains the current plotting implementation and the saved source values directly required by it.
+This directory contains the current plotting-only workflow for the finalized FewShot figures.
 
-## What this workflow does
+## Scope
 
-- reads the CSV/TXT inputs under `data/`;
-- regenerates Figures 1–5 and S1–S2 into `outputs/final/`;
-- optionally redraws S3 into `outputs/held_s3/`;
-- writes source/output hash manifests and checks that source files were not modified;
-- verifies output dimensions and embedded Arial fonts when `pdffonts` is available.
+`code/final_publication_figures.py` reads saved CSV values under `data/source_data/` and regenerates Figures 2-5 and S1-S3. It does not fit models, alter shortlist membership, recompute conformal intervals, or rerun adsorption calculations. Figure 1 is a locked static publication asset and is not regenerated.
 
-It does **not** run the upstream model-fitting pipeline, select new candidates, recompute conformal intervals, or rerun external-domain calculations.
+The authoritative manuscript PDFs are stored under `../figures/`. Regeneration writes only to `outputs/`; a rerun must never overwrite the locked PDFs automatically.
 
-## WSL2 setup using the current Python environment
+## Windows / Anaconda
 
-```bash
-bash setup_wsl.sh
-bash RUN_ALL_WSL.sh
+Activate the intended environment, then run:
+
+```text
+conda activate mofenv
+cd figure_generation
+python check_environment.py
+python run_all.py
+python verify_outputs.py
 ```
 
-`setup_wsl.sh` uses the Python already active in the shell. It creates **no** Conda environment and no venv. If dependencies are missing, it reports the optional installation command for the current environment.
+To regenerate one figure:
 
-Final exports require Arial. On Windows + WSL2, `setup_wsl.sh` links the four Arial styles from `/mnt/c/Windows/Fonts/` into a user font directory. Font files are not included in the repository.
+```text
+python run_figure.py 3
+```
 
-## Publication assets
+Arial is required for final regeneration. `--allow-font-fallback-for-preview` is available only for layout testing.
 
-The authoritative manuscript PDFs live in `../figures/`, outside this directory. Plotting scripts write only to `outputs/`; do not copy regenerated files into `../figures/` without a deliberate review and manifest update.
+## WSL2
 
-## Figure S3
+The existing `setup_wsl.sh` helper can expose Windows Arial to Matplotlib in WSL2. After setup, run `python run_all.py`.
 
-S3 is regenerated only when `--include-held-s3` is requested. Its historical external-geometry mapping remains provenance-limited; see `../docs/figures/S3_PROVENANCE_STATUS.md`.
+## Final layouts
+
+- Figure 2: 2 x 3
+- Figure 3: 3 x 2
+- Figure 4: 2 x 3
+- Figure 5: 3 x 2
+- Figure S1: 2 x 2
+- Figures S2-S3: 1 x 2

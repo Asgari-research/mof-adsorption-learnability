@@ -42,6 +42,7 @@ required = [
     ROOT / "docs" / "modeling" / "STATIC_ARCHITECTURE.md",
     ROOT / "docs" / "modeling" / "EXECUTION_SEMANTICS.md",
     ROOT / "docs" / "figures" / "FINAL_FIGURE_MANIFEST.csv",
+    ROOT / "docs" / "figures" / "FINAL_FIGURE_LOCK.md",
     ROOT / "docs" / "figures" / "FINAL_FIGURE_SOURCE_MANIFEST.csv",
     ROOT / "modeling_pipeline" / "README.md",
     ROOT / "figure_generation" / "README.md",

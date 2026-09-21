@@ -36,3 +36,9 @@ tmp/
 # Large/raw data should be managed explicitly, not committed accidentally
 raw_data/
 data_raw/
+
+# Figure-workstream local artifacts
+figure_generation/preview_layout_only/
+figure_generation/reference_original/
+figure_generation/ready_for_overleaf/
+figure_generation/*.zip

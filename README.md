@@ -90,17 +90,21 @@ The PDFs in `figures/` are the publication-authority files. Their SHA-256 hashes
 
 Figure regeneration writes to `figure_generation/outputs/` and must not silently replace the publication-authority PDFs. The current plotting package uses saved panel/table values only; it does not refit models, recompute shortlist membership, reconstruct raw adsorption observations, or recalculate external-domain neighbors.
 
-## Regenerating current figures in WSL2
+## Regenerating current figures
 
-The plotting workflow uses the Python environment already active in the shell. It does not create or activate a new Conda environment or venv.
+The plotting workflow uses saved publication-level source tables only and writes review outputs under `figure_generation/outputs/`. It does not replace the locked PDFs under `figures/`.
 
-```bash
+Windows / Anaconda:
+
+```text
+conda activate mofenv
 cd figure_generation
-bash setup_wsl.sh
-bash RUN_ALL_WSL.sh
+python check_environment.py
+python run_all.py
+python verify_outputs.py
 ```
 
-Final exports require Arial; font files are not distributed with this repository.
+WSL2 users can run `bash setup_wsl.sh` first to expose Windows Arial, then use the same Python commands. Figure 1 is a locked static asset; the current renderer covers Figures 2-5 and S1-S3.
 
 ## Repository verification
 

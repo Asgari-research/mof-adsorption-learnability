@@ -1,27 +1,24 @@
 #!/usr/bin/env python3
-from pathlib import Path
+"""Check plotting dependencies and Arial availability."""
+from __future__ import annotations
 import sys
 
-ROOT = Path(__file__).resolve().parent
-CODE = ROOT / "code"
-sys.path.insert(0, str(CODE))
+for name in ("numpy", "pandas", "matplotlib", "PIL"):
+    try:
+        __import__(name)
+    except Exception as exc:
+        raise SystemExit(f"Missing dependency {name}: {exc}")
 
-from figure_style import configure_matplotlib, resolve_arial, assert_arial_family
+from matplotlib import font_manager
+try:
+    arial = font_manager.findfont("Arial", fallback_to_default=False)
+except Exception:
+    raise SystemExit("Arial is not visible to Matplotlib. Final regeneration requires Arial.")
 
-font = resolve_arial(strict=True)
-configure_matplotlib(strict_font=True)
-styles = assert_arial_family()
-
-import matplotlib
-import numpy
-import pandas
-
-print("FewShot figure environment")
-print("  Python      :", sys.version.split()[0])
-print("  matplotlib  :", matplotlib.__version__)
-print("  numpy       :", numpy.__version__)
-print("  pandas      :", pandas.__version__)
-print("  Arial file  :", font)
-for k, v in styles.items():
-    print(f"  Arial {k:11s}: {v}")
-print("  Status      : PASS - actual Arial located")
+import matplotlib, numpy, pandas
+print("Python     :", sys.version.split()[0])
+print("matplotlib :", matplotlib.__version__)
+print("numpy      :", numpy.__version__)
+print("pandas     :", pandas.__version__)
+print("Arial      :", arial)
+print("Status     : PASS")

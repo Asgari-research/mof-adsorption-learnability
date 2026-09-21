@@ -40,7 +40,7 @@ Saved figure source tables
           |  no model fitting
           v
 Current plotting implementation
-  figure_generation/code/
+  figure_generation/code/final_publication_figures.py
           |
           v
 Scratch regenerated figures
@@ -65,7 +65,7 @@ A fresh clone can:
 - inspect configuration, CLI, path and override maps without importing the historical module;
 - inspect the complete machine-readable publication tables under `publication_tables/`;
 - inspect the saved panel-level source tables used by the plotting workflow;
-- regenerate the current manuscript figures if compatible plotting dependencies and Arial are available;
+- regenerate Figures 2-5 and S1-S3 from saved source values if compatible plotting dependencies and Arial are available;
 - verify the finalized figure hashes;
 - run the read-only repository integrity check.
 
@@ -102,7 +102,7 @@ Before rerunning:
 
 ## Current figure regeneration
 
-The current figure workflow is intentionally narrower. It consumes saved tables and does not:
+The current figure workflow is intentionally narrower. Figure 1 is static; the renderer consumes saved tables for Figures 2-5 and S1-S3 and does not:
 
 - refit models;
 - reconstruct the raw adsorption database;
